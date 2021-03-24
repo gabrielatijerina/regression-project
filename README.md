@@ -3,8 +3,6 @@
 
 ## About the Project
 
-****
-
 ### Goals:
 
 * Predict the values of single unit properties using the property data from those with a transaction during the "hot months" of May-August 2017 based on the tax assessed value
@@ -12,6 +10,14 @@
 * Find where the properties are located 
 
 * Calculate and visualize the distribution of tax rates for each county
+
+**** 
+
+### Deliverables:
+* README.md file containing overall project information.
+* A Jupyter Notebook Report detailing the pipeline process.
+* Report/presentation slides that summarize findings about the drivers of the single unit property values and tax distribution for each county
+* Python file `wrangle.py` 
 
 **** 
 

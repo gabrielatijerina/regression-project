@@ -47,6 +47,7 @@ def get_zillow_data():
 # adds caching to get_zillow_data and checks for local filename (zillow_df.csv)
 # if file exists, uses the .csv file
 # if file doesn't exist, then produces SQL & pandas necessary to create a df, then write the df to a .csv file
+
 def cached_zillow(cached=False):
     '''
     This function reads in zillow data from Codeup database and writes data to
@@ -164,7 +165,8 @@ def clean_zillow(df):
     return df
 
 
-# splits a dataframe into train, validate, test 
+############################# Split Data ############################# 
+
 def split(df):
     '''
     take in a DataFrame and return train, validate, and test DataFrames.
@@ -177,8 +179,8 @@ def split(df):
     return train, validate, test
 
 
+############################# Scale Data ############################# 
 
-# defines MinMaxScaler() and returns scaled data
 def Min_Max_Scaler(X_train, X_validate, X_test):
     """
     Takes in X_train, X_validate and X_test dfs with numeric values only
